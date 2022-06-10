@@ -1,6 +1,6 @@
 module.exports = {
-  // base: "/", 本地开发放开此注释
-  base: "/blog/",
+  base: "/", // 本地开发放开此注释
+  // base: "/blog/",
   title: "消费金融组的博客",
   description: "专注前端技术栈分享",
   themeConfig: {
@@ -29,10 +29,10 @@ module.exports = {
         {
           title: "配置",
           children: [
-            ["/webpack/entry/", "入口"],
-            ["/webpack/output/", "输出"],
-            ["/webpack/module/", "模块"],
-            ["/webpack/plugin/", "插件"],
+            ["/webpack/config/entry/", "入口"],
+            ["/webpack/config/output/", "输出"],
+            ["/webpack/config/module/", "模块"],
+            ["/webpack/config/plugin/", "插件"],
           ],
         },
       ],
