@@ -2,7 +2,7 @@
 
 Plugin 是用来扩展 Webpack 功能的，通过在构建流程里注入钩子实现，它给 Webpack 带来了很大的灵活性。
 
-### html-webpack-plugin
+## html-webpack-plugin
 
 前两节操作已经可以把css文件和index.js成功构建，但是html文件还在项目根目录下并没有打包进dist中，因此我们需要使用`html-webpack-plugin`插件帮助我们实现此功能
 
