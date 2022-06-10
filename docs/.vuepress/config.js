@@ -7,6 +7,11 @@ module.exports = {
       { text: "主页", link: "/" },
       { text: "webpack", link: "/webpack/" },
       { text: "node", link: "/node/" },
+      {
+        text: "工具",
+        link: "/tools/",
+        items: [{ text: "git", link: "/tools/git/" }],
+      },
     ],
     sidebar: {
       "/webpack/": [
@@ -29,6 +34,11 @@ module.exports = {
             ["/webpack/plugin/", "插件"],
           ],
         },
+      ],
+      "/tools/git/": [
+        ["/tools/git/install/", "安装"],
+        ["/tools/git/config/", "配置"],
+        ["/tools/git/uiTool/", "可视化工具"],
       ],
     },
   },
