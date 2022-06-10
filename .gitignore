@@ -106,3 +106,4 @@ dist
 # Lock File
 lock
 *.lock
+/.vscode/settings.json

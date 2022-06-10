@@ -6,16 +6,29 @@ module.exports = {
     nav: [
       { text: "主页", link: "/" },
       { text: "webpack", link: "/webpack/" },
+      { text: "node", link: "/node/" },
     ],
     sidebar: {
       "/webpack/": [
         ["", "介绍"],
-        ["/webpack/install/", "安装"],
-        ["/webpack/entry/", "入口"],
-        ["/webpack/output/", "输出"],
-        ["/webpack/loader/", "Loader"],
-        ["/webpack/module/", "模块"],
-        ["/webpack/plugin/", "插件"],
+        {
+          title: "入门",
+          children: [
+            ["/webpack/introduction/install/", "安装与使用"],
+            ["/webpack/introduction/loader/", "使用Loader"],
+            ["/webpack/introduction/plugin/", "使用Plugin"],
+            ["/webpack/introduction/devServe/", "使用DevServe"],
+          ],
+        },
+        {
+          title: "配置",
+          children: [
+            ["/webpack/entry/", "入口"],
+            ["/webpack/output/", "输出"],
+            ["/webpack/module/", "模块"],
+            ["/webpack/plugin/", "插件"],
+          ],
+        },
       ],
     },
   },
