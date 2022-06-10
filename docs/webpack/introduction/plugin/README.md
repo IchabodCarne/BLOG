@@ -66,5 +66,6 @@ module.exports = {
   ],
 ```
 
-#### html-webpack-plugin参考文档
+### html-webpack-plugin参考文档
+
 [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin)
