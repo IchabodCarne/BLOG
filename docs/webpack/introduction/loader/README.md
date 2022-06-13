@@ -72,5 +72,3 @@ document.body.appendChild(components());
 
 - [webpack官网列出的常用loader](https://www.webpackjs.com/loaders/)
 - [vue-loader](https://vue-loader.vuejs.org/zh/)
-
-

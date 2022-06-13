@@ -8,5 +8,5 @@
 
 #### 参考文档地址
 
-- [webpack中文官网](https://www.webpackjs.com/)
+- [webpack中文官网](https://webpack.docschina.org/)
 - [深入浅出 Webpack](http://webpack.wuhaolin.cn/)
