@@ -1,7 +1,7 @@
 module.exports = {
   // base: "/", // 本地开发放开此注释
   base: "/BLOG/",
-  title: "消费金融组的博客",
+  title: "XFJRZ的博客",
   description: "专注前端技术栈分享",
   themeConfig: {
     nav: [
