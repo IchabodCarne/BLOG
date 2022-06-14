@@ -11,7 +11,7 @@ module.exports = {
       {
         text: "工具",
         link: "/tools/",
-        items: [{ text: "git", link: "/tools/git/" }],
+        items: [{ text: "git", link: "/tools/git/install/" }],
       },
     ],
     sidebar: {
@@ -38,8 +38,7 @@ module.exports = {
         },
       ],
       "/tools/git/": [
-        ["/tools/git/install/", "安装"],
-        ["/tools/git/config/", "配置"],
+        ["/tools/git/install/", "安装与配置"],
         ["/tools/git/uiTool/", "可视化工具"],
       ],
     },
