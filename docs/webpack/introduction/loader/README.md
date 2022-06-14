@@ -71,4 +71,8 @@ document.body.appendChild(components());
 ### 其他loader
 
 - [webpack官网列出的常用loader](https://www.webpackjs.com/loaders/)
-- [vue-loader](https://vue-loader.vuejs.org/zh/)
+- [vue-loader](https://vue-loader.vuejs.org/zh/)：加载 Vue.js 单文件组件
+- [babel-loader](https://github.com/babel/babel-loader)：把 ES6 转换成 ES5
+- [eslint-loader](https://github.com/webpack-contrib/eslint-loader)：通过 ESLint 检查 JavaScript 代码
+- [file-loader](https://github.com/webpack-contrib/file-loader)：把文件输出到一个文件夹中，在代码中通过相对 URL 去引用输出的文件
+- [url-loader](https://github.com/webpack-contrib/url-loader)和 file-loader 类似，但是能在文件很小的情况下以 base64 的方式把文件内容注入到代码中去

@@ -1,4 +1,4 @@
-# 输出
+# 输出（output）
 
 输出结果，在 Webpack 经过一系列处理并得出最终想要的代码后输出结果。
 
@@ -44,3 +44,19 @@ path: path.resolve(__dirname, 'dist')
 ```
 
 path一般都设置dist为输出目录，如果不设置path，默认生成的也是dist目录
+
+## publicPath
+
+在复杂的项目里可能会有一些构建出的资源需要异步加载，加载这些异步资源需要对应的 URL 地址。
+
+`output.publicPath` 配置发布到线上资源的 URL 前缀，为string 类型。 默认值是空字符串 ''，即使用相对路径。
+
+当我们配置了`publicPath`，在实际应用中生产中我们代码中某个静态文件就会加上这个前缀
+
+```js
+publicPath: 'https://cdn.example.com/assets/'
+```
+
+```html
+<script src='https://cdn.example.com/assets/a_12345678.js'></script>
+```

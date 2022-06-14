@@ -33,6 +33,7 @@ module.exports = {
             ["/webpack/config/entry/", "入口"],
             ["/webpack/config/output/", "输出"],
             ["/webpack/config/module/", "模块"],
+            ["/webpack/config/resolve/", "解析"],
             ["/webpack/config/plugin/", "插件"],
           ],
         },
