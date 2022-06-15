@@ -35,6 +35,7 @@ module.exports = {
             ["/webpack/config/module/", "模块"],
             ["/webpack/config/resolve/", "解析"],
             ["/webpack/config/plugin/", "插件"],
+            ["/webpack/config/devServer/", "DevServer"],
           ],
         },
       ],
