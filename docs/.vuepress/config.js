@@ -32,10 +32,12 @@ module.exports = {
           children: [
             ["/webpack/config/entry/", "入口"],
             ["/webpack/config/output/", "输出"],
+            ["/webpack/config/mode/", "模式"],
             ["/webpack/config/module/", "模块"],
             ["/webpack/config/resolve/", "解析"],
             ["/webpack/config/plugin/", "插件"],
             ["/webpack/config/devServer/", "DevServer"],
+            // ["/webpack/config/optimization/", "优化"],
           ],
         },
       ],
