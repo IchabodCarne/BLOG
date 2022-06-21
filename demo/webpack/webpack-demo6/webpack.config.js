@@ -6,6 +6,7 @@ const { VueLoaderPlugin } = require("vue-loader");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserWebpackPlugin = require("terser-webpack-plugin");
 
 /**
  * @type {Configuration}
@@ -77,6 +78,16 @@ const config = {
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
     }),
+    new TerserWebpackPlugin({
+      extractComments: false,
+      terserOptions: {
+        compress: {
+          warnings: false,
+          drop_console: true,
+          drop_debugger: true,
+        },
+      },
+    }),
   ],
   devServer: {
     open: true,
@@ -91,7 +102,7 @@ const config = {
     },
   },
   devtool: "source-map",
-  mode: "development",
+  mode: "production",
 };
 
 module.exports = config;

@@ -9,6 +9,7 @@ import { useRouter } from "vue-router";
 
 const router = useRouter();
 const handleOpen = (key, keyPath) => {
+  console.log("菜单点击事件");
   console.log(key, keyPath);
 };
 const handleClose = (key, keyPath) => {

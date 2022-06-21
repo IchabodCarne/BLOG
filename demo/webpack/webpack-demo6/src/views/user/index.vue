@@ -2,12 +2,17 @@
 import { Search, Plus } from "@element-plus/icons-vue";
 import { ref, reactive } from "vue";
 import { get } from "../../javascript/api";
+import { userStore } from "@/store/user";
+
+const store = userStore();
 
 // 搜索框相关
 const searchVal = ref("");
 const searchClick = async () => {
   const res = await get("/api/users/getUsers");
+  console.log("用户列表数据", res.list);
   data.userList = res.list;
+  store.setUserList(res.list);
 };
 
 // 表格相关
