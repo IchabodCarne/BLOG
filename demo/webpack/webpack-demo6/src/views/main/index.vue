@@ -1,4 +1,5 @@
 <script setup>
+import { ElContainer, ElAvatar, ElAside, ElHeader, ElMain } from "element-plus";
 import AsideMenu from "../../components/Menu";
 
 const avatarUrl = require("../../images/touxiang.jpg");

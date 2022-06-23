@@ -1,4 +1,5 @@
 <script setup>
+import { ElInput, ElTable, ElTableColumn, ElButton } from "element-plus";
 import { Search, Plus } from "@element-plus/icons-vue";
 import { ref, reactive } from "vue";
 import { get } from "../../javascript/api";
