@@ -41,6 +41,10 @@ module.exports = {
           ],
         },
       ],
+      "/node/": [
+        ["", "介绍"],
+        ["/node/fs/", "fs 文件系统"],
+      ],
       "/tools/git/": [
         ["/tools/git/install/", "安装与配置"],
         ["/tools/git/uiTool/", "可视化工具"],
