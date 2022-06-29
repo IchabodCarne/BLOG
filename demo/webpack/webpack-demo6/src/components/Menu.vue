@@ -1,5 +1,13 @@
 <script setup>
 import {
+  ElMenu,
+  ElSubMenu,
+  ElMenuItemGroup,
+  ElMenuItem,
+  ElIcon,
+} from "element-plus";
+
+import {
   Document,
   Menu as IconMenu,
   Location,

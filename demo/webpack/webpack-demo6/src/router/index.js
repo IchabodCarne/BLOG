@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Main from "../views/main/index.vue";
+import User from "../views/user/index.vue";
 
 const routes = [
   {
@@ -10,7 +11,7 @@ const routes = [
       {
         path: "/user",
         name: "user",
-        component: import("../views/user/index.vue"),
+        component: User,
       },
     ],
   },

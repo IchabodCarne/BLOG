@@ -4,6 +4,7 @@ import { Search, Plus } from "@element-plus/icons-vue";
 import { ref, reactive } from "vue";
 import { get } from "../../javascript/api";
 import { userStore } from "@/store/user";
+import { maxValueOfArray, minValueOfArray } from "../../javascript/utils";
 
 const store = userStore();
 
@@ -16,6 +17,8 @@ const searchClick = async () => {
   store.setUserList(res.list);
 };
 
+const minVal = minValueOfArray([123, 35, 68, 879]);
+
 // 表格相关
 const data = reactive({
   userList: [],
@@ -25,6 +28,7 @@ const handleClick = () => {};
 
 <template>
   <div class="search-area">
+    <span>最小值方法打包测试{{ minVal }}</span>
     <el-input
       v-model="searchVal"
       class="w-50 m-2"
