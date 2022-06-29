@@ -37,8 +37,13 @@ module.exports = {
             ["/webpack/config/resolve/", "解析"],
             ["/webpack/config/plugin/", "插件"],
             ["/webpack/config/devServer/", "DevServer"],
-            // ["/webpack/config/optimization/", "优化"],
+            ["/webpack/config/performance/", "性能"],
+            ["/webpack/config/optimization/", "优化"],
           ],
+        },
+        {
+          title: "构建优化",
+          children: [],
         },
       ],
       "/node/": [
