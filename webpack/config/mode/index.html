@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>模式（mode） | XFJRZ的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="专注前端技术栈分享">
+    
+    <link rel="preload" href="/BLOG/assets/css/0.styles.34a49f8a.css" as="style"><link rel="preload" href="/BLOG/assets/js/app.87df5bd7.js" as="script"><link rel="preload" href="/BLOG/assets/js/2.8d8787df.js" as="script"><link rel="preload" href="/BLOG/assets/js/7.99faac97.js" as="script"><link rel="prefetch" href="/BLOG/assets/js/10.4b311d17.js"><link rel="prefetch" href="/BLOG/assets/js/11.1f6ddcbd.js"><link rel="prefetch" href="/BLOG/assets/js/12.04fd696d.js"><link rel="prefetch" href="/BLOG/assets/js/13.cee247aa.js"><link rel="prefetch" href="/BLOG/assets/js/14.41915173.js"><link rel="prefetch" href="/BLOG/assets/js/15.4553eecf.js"><link rel="prefetch" href="/BLOG/assets/js/16.a6258645.js"><link rel="prefetch" href="/BLOG/assets/js/17.4b389c70.js"><link rel="prefetch" href="/BLOG/assets/js/18.f2ce6a54.js"><link rel="prefetch" href="/BLOG/assets/js/19.01631584.js"><link rel="prefetch" href="/BLOG/assets/js/20.e1fe7412.js"><link rel="prefetch" href="/BLOG/assets/js/21.34567611.js"><link rel="prefetch" href="/BLOG/assets/js/22.93d9061a.js"><link rel="prefetch" href="/BLOG/assets/js/23.f13513a9.js"><link rel="prefetch" href="/BLOG/assets/js/24.51efa63f.js"><link rel="prefetch" href="/BLOG/assets/js/25.c09d0934.js"><link rel="prefetch" href="/BLOG/assets/js/26.536caa61.js"><link rel="prefetch" href="/BLOG/assets/js/3.a5571b58.js"><link rel="prefetch" href="/BLOG/assets/js/4.5d003395.js"><link rel="prefetch" href="/BLOG/assets/js/5.fc42ed38.js"><link rel="prefetch" href="/BLOG/assets/js/6.dffd300f.js"><link rel="prefetch" href="/BLOG/assets/js/8.29eb3213.js"><link rel="prefetch" href="/BLOG/assets/js/9.bf6be474.js">
+    <link rel="stylesheet" href="/BLOG/assets/css/0.styles.34a49f8a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/BLOG/" class="home-link router-link-active"><!----> <span class="site-name">XFJRZ的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/BLOG/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/BLOG/webpack/" class="nav-link router-link-active">
+  webpack
+</a></div><div class="nav-item"><a href="/BLOG/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/BLOG/tools/git/install/" class="nav-link">
+  git
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/BLOG/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/BLOG/webpack/" class="nav-link router-link-active">
+  webpack
+</a></div><div class="nav-item"><a href="/BLOG/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/BLOG/tools/git/install/" class="nav-link">
+  git
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/BLOG/webpack/" aria-current="page" class="sidebar-link">介绍</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>入门</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>配置</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/BLOG/webpack/config/entry/" class="sidebar-link">入口</a></li><li><a href="/BLOG/webpack/config/output/" class="sidebar-link">输出</a></li><li><a href="/BLOG/webpack/config/mode/" aria-current="page" class="active sidebar-link">模式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/BLOG/webpack/config/mode/#defineplugin" class="sidebar-link">DefinePlugin</a></li><li class="sidebar-sub-header"><a href="/BLOG/webpack/config/mode/#environmentplugin" class="sidebar-link">EnvironmentPlugin</a></li></ul></li><li><a href="/BLOG/webpack/config/module/" class="sidebar-link">模块</a></li><li><a href="/BLOG/webpack/config/resolve/" class="sidebar-link">解析</a></li><li><a href="/BLOG/webpack/config/plugin/" class="sidebar-link">插件</a></li><li><a href="/BLOG/webpack/config/devServer/" class="sidebar-link">DevServer</a></li><li><a href="/BLOG/webpack/config/performance/" class="sidebar-link">性能</a></li><li><a href="/BLOG/webpack/config/optimization/" class="sidebar-link">优化</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>构建优化</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="模式-mode"><a href="#模式-mode" class="header-anchor">#</a> 模式（mode）</h1> <p>提供 mode 配置选项，告知 webpack 使用相应模式的内置优化。</p> <table><thead><tr><th>选项</th> <th>描述</th></tr></thead> <tbody><tr><td>development</td> <td>会将 DefinePlugin 中 process.env.NODE_ENV 的值设置为 development. 为模块和 chunk 启用有效的名。</td></tr> <tr><td>production</td> <td>会将 DefinePlugin 中 process.env.NODE_ENV 的值设置为 production。为模块和 chunk 启用确定性的混淆名称，FlagDependencyUsagePlugin，FlagIncludedChunksPlugin，ModuleConcatenationPlugin，NoEmitOnErrorsPlugin 和 TerserPlugin 。</td></tr> <tr><td>none</td> <td>不使用任何默认优化选项</td></tr></tbody></table> <p>如果没有设置，webpack 会给 mode 的默认值设置为 production。</p> <h2 id="defineplugin"><a href="#defineplugin" class="header-anchor">#</a> DefinePlugin</h2> <p>DefinePlugin是webpack本身自带的一个插件，用于允许创建一个在编译时可以配置的全局常量。</p> <ol><li>这是一个定义全局变量的插件,定义的变量可以在webpack打包范围内任意javascript环境内访问,甚至在项目根目录之外的js里也可以使用</li> <li>使用字符串或JSON.stringify()转换值,推荐使用JSON.stringify(),可以转换json对象</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> envConfig <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">development</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">api</span><span class="token operator">:</span> <span class="token string">'www.baidu.com'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">production</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">api</span><span class="token operator">:</span> <span class="token string">'www.jd.com'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>DefinePlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">envConfig</span><span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>envConfig<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">]</span>
+  <span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>定义后我们就可以在任何js文件中访问，在index.js中打印<code>envConfig</code></p> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>envConfig<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="/BLOG/assets/img/prtScn3.c7ab9270.png" alt="DefinePlugin"></p> <h2 id="environmentplugin"><a href="#environmentplugin" class="header-anchor">#</a> EnvironmentPlugin</h2> <p>EnvironmentPlugin 是一个通过 DefinePlugin 来设置 process.env 环境变量的快捷方式。</p> <p>EnvironmentPlugin 可以接收键数组或将键映射到其默认值的对象。、</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>EnvironmentPlugin</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'NODE_ENV'</span><span class="token punctuation">,</span> <span class="token string">'DEBUG'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>其效果等同于</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>DefinePlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token string-property property">'process.env.NODE_ENV'</span><span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token string-property property">'process.env.DEBUG'</span><span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">DEBUG</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>使用不存在的环境变量会导致一个 &quot;EnvironmentPlugin - ${key} environment variable is undefined&quot; 错误。</p></blockquote> <p>因此要创建一个不存在的环境变量时，可以采用对象赋值的形式去设置默认值</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>EnvironmentPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token constant">NODE_ENV</span><span class="token operator">:</span> <span class="token string">'development'</span><span class="token punctuation">,</span> <span class="token comment">// 除非有定义 process.env.NODE_ENV，否则就使用 'development'</span>
+  <span class="token constant">DEBUG</span><span class="token operator">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>模式或者环境变量主要时用于开发环境和生产环境之间一些不同的配置，尽可能的复用代码，在构建的过程中需要根据目标代码要运行的环境而输出不同的代码</strong></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/BLOG/webpack/config/output/" class="prev">
+        输出
+      </a></span> <span class="next"><a href="/BLOG/webpack/config/module/">
+        模块
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/BLOG/assets/js/app.87df5bd7.js" defer></script><script src="/BLOG/assets/js/2.8d8787df.js" defer></script><script src="/BLOG/assets/js/7.99faac97.js" defer></script>
+  </body>
+</html>

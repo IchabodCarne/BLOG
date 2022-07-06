@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>解析（resolve） | XFJRZ的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="专注前端技术栈分享">
+    
+    <link rel="preload" href="/BLOG/assets/css/0.styles.34a49f8a.css" as="style"><link rel="preload" href="/BLOG/assets/js/app.87df5bd7.js" as="script"><link rel="preload" href="/BLOG/assets/js/2.8d8787df.js" as="script"><link rel="preload" href="/BLOG/assets/js/22.93d9061a.js" as="script"><link rel="prefetch" href="/BLOG/assets/js/10.4b311d17.js"><link rel="prefetch" href="/BLOG/assets/js/11.1f6ddcbd.js"><link rel="prefetch" href="/BLOG/assets/js/12.04fd696d.js"><link rel="prefetch" href="/BLOG/assets/js/13.cee247aa.js"><link rel="prefetch" href="/BLOG/assets/js/14.41915173.js"><link rel="prefetch" href="/BLOG/assets/js/15.4553eecf.js"><link rel="prefetch" href="/BLOG/assets/js/16.a6258645.js"><link rel="prefetch" href="/BLOG/assets/js/17.4b389c70.js"><link rel="prefetch" href="/BLOG/assets/js/18.f2ce6a54.js"><link rel="prefetch" href="/BLOG/assets/js/19.01631584.js"><link rel="prefetch" href="/BLOG/assets/js/20.e1fe7412.js"><link rel="prefetch" href="/BLOG/assets/js/21.34567611.js"><link rel="prefetch" href="/BLOG/assets/js/23.f13513a9.js"><link rel="prefetch" href="/BLOG/assets/js/24.51efa63f.js"><link rel="prefetch" href="/BLOG/assets/js/25.c09d0934.js"><link rel="prefetch" href="/BLOG/assets/js/26.536caa61.js"><link rel="prefetch" href="/BLOG/assets/js/3.a5571b58.js"><link rel="prefetch" href="/BLOG/assets/js/4.5d003395.js"><link rel="prefetch" href="/BLOG/assets/js/5.fc42ed38.js"><link rel="prefetch" href="/BLOG/assets/js/6.dffd300f.js"><link rel="prefetch" href="/BLOG/assets/js/7.99faac97.js"><link rel="prefetch" href="/BLOG/assets/js/8.29eb3213.js"><link rel="prefetch" href="/BLOG/assets/js/9.bf6be474.js">
+    <link rel="stylesheet" href="/BLOG/assets/css/0.styles.34a49f8a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/BLOG/" class="home-link router-link-active"><!----> <span class="site-name">XFJRZ的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/BLOG/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/BLOG/webpack/" class="nav-link router-link-active">
+  webpack
+</a></div><div class="nav-item"><a href="/BLOG/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/BLOG/tools/git/install/" class="nav-link">
+  git
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/BLOG/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/BLOG/webpack/" class="nav-link router-link-active">
+  webpack
+</a></div><div class="nav-item"><a href="/BLOG/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/BLOG/tools/git/install/" class="nav-link">
+  git
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/BLOG/webpack/" aria-current="page" class="sidebar-link">介绍</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>入门</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>配置</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/BLOG/webpack/config/entry/" class="sidebar-link">入口</a></li><li><a href="/BLOG/webpack/config/output/" class="sidebar-link">输出</a></li><li><a href="/BLOG/webpack/config/mode/" class="sidebar-link">模式</a></li><li><a href="/BLOG/webpack/config/module/" class="sidebar-link">模块</a></li><li><a href="/BLOG/webpack/config/resolve/" aria-current="page" class="active sidebar-link">解析</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/BLOG/webpack/config/resolve/#alias" class="sidebar-link">alias</a></li><li class="sidebar-sub-header"><a href="/BLOG/webpack/config/resolve/#extensions" class="sidebar-link">extensions</a></li></ul></li><li><a href="/BLOG/webpack/config/plugin/" class="sidebar-link">插件</a></li><li><a href="/BLOG/webpack/config/devServer/" class="sidebar-link">DevServer</a></li><li><a href="/BLOG/webpack/config/performance/" class="sidebar-link">性能</a></li><li><a href="/BLOG/webpack/config/optimization/" class="sidebar-link">优化</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>构建优化</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="解析-resolve"><a href="#解析-resolve" class="header-anchor">#</a> 解析（resolve）</h1> <p>Webpack 在启动后会从配置的入口模块出发找出所有依赖的模块，Resolve 配置 Webpack 如何寻找模块所对应的文件。 Webpack 内置 JavaScript 模块化语法解析功能，默认会采用模块化标准里约定好的规则去寻找，但你也可以根据自己的需要修改默认的规则。</p> <h2 id="alias"><a href="#alias" class="header-anchor">#</a> alias</h2> <p>创建 import 或 require 的别名，来确保模块引入变得更简单。例如，一些位于 src/ 文件夹下的常用模块：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token literal-property property">alias</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token string-property property">'@'</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'src'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>现在，替换「在导入时使用相对路径」这种方式，就像这样：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@/component/Input.vue'</span>
+</code></pre></div><h2 id="extensions"><a href="#extensions" class="header-anchor">#</a> extensions</h2> <p>自动解析确定的扩展。默认值为：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token literal-property property">extensions</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.json&quot;</span><span class="token punctuation">]</span>
+</code></pre></div><p>能够使用户在引入模块时不带扩展：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> File <span class="token keyword">from</span> <span class="token string">'../path/to/file'</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/BLOG/webpack/config/module/" class="prev">
+        模块
+      </a></span> <span class="next"><a href="/BLOG/webpack/config/plugin/">
+        插件
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/BLOG/assets/js/app.87df5bd7.js" defer></script><script src="/BLOG/assets/js/2.8d8787df.js" defer></script><script src="/BLOG/assets/js/22.93d9061a.js" defer></script>
+  </body>
+</html>

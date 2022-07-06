@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>fs 文件系统 | XFJRZ的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="专注前端技术栈分享">
+    
+    <link rel="preload" href="/BLOG/assets/css/0.styles.34a49f8a.css" as="style"><link rel="preload" href="/BLOG/assets/js/app.87df5bd7.js" as="script"><link rel="preload" href="/BLOG/assets/js/2.8d8787df.js" as="script"><link rel="preload" href="/BLOG/assets/js/12.04fd696d.js" as="script"><link rel="prefetch" href="/BLOG/assets/js/10.4b311d17.js"><link rel="prefetch" href="/BLOG/assets/js/11.1f6ddcbd.js"><link rel="prefetch" href="/BLOG/assets/js/13.cee247aa.js"><link rel="prefetch" href="/BLOG/assets/js/14.41915173.js"><link rel="prefetch" href="/BLOG/assets/js/15.4553eecf.js"><link rel="prefetch" href="/BLOG/assets/js/16.a6258645.js"><link rel="prefetch" href="/BLOG/assets/js/17.4b389c70.js"><link rel="prefetch" href="/BLOG/assets/js/18.f2ce6a54.js"><link rel="prefetch" href="/BLOG/assets/js/19.01631584.js"><link rel="prefetch" href="/BLOG/assets/js/20.e1fe7412.js"><link rel="prefetch" href="/BLOG/assets/js/21.34567611.js"><link rel="prefetch" href="/BLOG/assets/js/22.93d9061a.js"><link rel="prefetch" href="/BLOG/assets/js/23.f13513a9.js"><link rel="prefetch" href="/BLOG/assets/js/24.51efa63f.js"><link rel="prefetch" href="/BLOG/assets/js/25.c09d0934.js"><link rel="prefetch" href="/BLOG/assets/js/26.536caa61.js"><link rel="prefetch" href="/BLOG/assets/js/3.a5571b58.js"><link rel="prefetch" href="/BLOG/assets/js/4.5d003395.js"><link rel="prefetch" href="/BLOG/assets/js/5.fc42ed38.js"><link rel="prefetch" href="/BLOG/assets/js/6.dffd300f.js"><link rel="prefetch" href="/BLOG/assets/js/7.99faac97.js"><link rel="prefetch" href="/BLOG/assets/js/8.29eb3213.js"><link rel="prefetch" href="/BLOG/assets/js/9.bf6be474.js">
+    <link rel="stylesheet" href="/BLOG/assets/css/0.styles.34a49f8a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/BLOG/" class="home-link router-link-active"><!----> <span class="site-name">XFJRZ的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/BLOG/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/BLOG/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/BLOG/node/" class="nav-link router-link-active">
+  node
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/BLOG/tools/git/install/" class="nav-link">
+  git
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/BLOG/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/BLOG/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/BLOG/node/" class="nav-link router-link-active">
+  node
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/BLOG/tools/git/install/" class="nav-link">
+  git
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/BLOG/node/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/BLOG/node/fs/" aria-current="page" class="active sidebar-link">fs 文件系统</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/BLOG/node/fs/#使用fs创建vuelocal某个功能下的文件及目录" class="sidebar-link">使用fs创建vueLocal某个功能下的文件及目录</a></li><li class="sidebar-sub-header"><a href="/BLOG/node/fs/#fs-statsync" class="sidebar-link">fs.statSync</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="fs-文件系统"><a href="#fs-文件系统" class="header-anchor">#</a> fs 文件系统</h1> <p><code>fs</code> 模块提供了许多非常实用的函数来访问文件系统并与文件系统进行交互。</p> <p>无需安装。 作为 Node.js 核心的组成部分，可以通过简单地引用来使用它：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span>
+</code></pre></div><p>下面通过一个例子来介绍相关的api</p> <h2 id="使用fs创建vuelocal某个功能下的文件及目录"><a href="#使用fs创建vuelocal某个功能下的文件及目录" class="header-anchor">#</a> 使用fs创建vueLocal某个功能下的文件及目录</h2> <blockquote><p>使用此工具快速创建新增交易目录</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;fs&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Mkdir</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>
+    targetPath <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    disStructure <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">parent</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">childDirStructure</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>targetPath <span class="token operator">=</span> targetPath<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>disStructure <span class="token operator">=</span> disStructure<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">mkdir</span><span class="token punctuation">(</span>dirPath <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> stat <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">statSync</span><span class="token punctuation">(</span>dirPath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>stat<span class="token punctuation">.</span>isDirectory<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Error: The </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>dirPath<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> has exists</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        fs<span class="token punctuation">.</span><span class="token function">mkdir</span><span class="token punctuation">(</span>dirPath<span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">recursive</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> path</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">reject</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+          <span class="token function">resolve</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">async</span> <span class="token function">_mkdirHandler</span><span class="token punctuation">(</span>dirPath <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> directory <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> executor <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span>rootPath <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> dirName <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> childPath <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">mkdir</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>rootPath<span class="token punctuation">,</span> dirName<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> childPath<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> dir <span class="token keyword">of</span> directory<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> dir <span class="token operator">===</span> <span class="token string">&quot;string&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">await</span> <span class="token function">executor</span><span class="token punctuation">(</span>dirPath<span class="token punctuation">,</span> dir<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>dir<span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">&quot;[object Object]&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">executor</span><span class="token punctuation">(</span>dirPath<span class="token punctuation">,</span> dir<span class="token punctuation">.</span>parent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_mkdirHandler</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> dir<span class="token punctuation">.</span>child<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">_createDir</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>disStructure<span class="token operator">?.</span>parent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">reject</span><span class="token punctuation">(</span><span class="token string">&quot;The file directory is incorrectly configured&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>disStructure<span class="token operator">?.</span>childDirStructure<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">reject</span><span class="token punctuation">(</span><span class="token string">&quot;The file directory is incorrectly configured&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">try</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> dirPath <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>targetPath <span class="token operator">||</span> __dirname<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>disStructure<span class="token punctuation">.</span>parent<span class="token punctuation">)</span>
+        <span class="token keyword">const</span> parentPath <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">mkdir</span><span class="token punctuation">(</span>dirPath<span class="token punctuation">)</span>
+        <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_mkdirHandler</span><span class="token punctuation">(</span>parentPath<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>disStructure<span class="token punctuation">.</span>childDirStructure<span class="token punctuation">)</span>
+        <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'Error creating directory'</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_createDir</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> Mkdir
+
+</code></pre></div><p>调用样例</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> Mkdir <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./Mkdir&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> dirs <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">parent</span><span class="token operator">:</span> <span class="token string">&quot;pension&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">childDirStructure</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;components&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">parent</span><span class="token operator">:</span> <span class="token string">&quot;pensionLCZQ&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">child</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;change&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;deposit&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;depositRecord&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;detail&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">parent</span><span class="token operator">:</span> <span class="token string">&quot;pensionZCLQ&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">child</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;change&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;detail&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;list&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;withdraw&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">parent</span><span class="token operator">:</span> <span class="token string">&quot;pensionZCZQ&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">child</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;detail&quot;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">parent</span><span class="token operator">:</span> <span class="token string">&quot;purchase&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">child</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;components&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;images&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;withdraw&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> mk <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Mkdir</span><span class="token punctuation">(</span><span class="token string">&quot;./test&quot;</span><span class="token punctuation">,</span> dirs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+mk<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>下面为大家介绍上面的demo所使用的node API</p> <h2 id="fs-statsync"><a href="#fs-statsync" class="header-anchor">#</a> fs.statSync</h2> <blockquote><p>fs.statSync()方法用于同步返回有关给定文件路径的信息。返回的fs.Stat对象具有多个字段和方法，以获取有关文件的更多详细信息。</p></blockquote> <p><em>用法：</em></p> <div class="language-js extra-class"><pre class="language-js"><code>fs<span class="token punctuation">.</span><span class="token function">statSync</span><span class="token punctuation">(</span> path<span class="token punctuation">,</span> options <span class="token punctuation">)</span>
+</code></pre></div><p><em>参数：</em></p> <ul><li>path:它包含必须检查的文件的路径。它可以是字符串，缓冲区或URL。</li> <li>options:该对象可用于指定将影响输出的可选参数。它具有一个可选参数：
+<ul><li>bigint:它是一个布尔值，它指定fs.Stats对象中返回的数值是否为bigint。默认值为false。</li></ul></li></ul> <p><em>返回值：</em></p> <p>返回一个Stats对象，其中包含文件路径的详细信息。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/BLOG/node/" class="prev router-link-active">
+        介绍
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/BLOG/assets/js/app.87df5bd7.js" defer></script><script src="/BLOG/assets/js/2.8d8787df.js" defer></script><script src="/BLOG/assets/js/12.04fd696d.js" defer></script>
+  </body>
+</html>
