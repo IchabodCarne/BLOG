@@ -43,7 +43,10 @@ module.exports = {
         },
         {
           title: "构建优化",
-          children: [],
+          children: [
+            ["/webpack/buildOptimization/performance/", "优化前端性能"],
+            ["/webpack/buildOptimization/velocity/", "提高webpack的构建速度"],
+          ],
         },
       ],
       "/node/": [
